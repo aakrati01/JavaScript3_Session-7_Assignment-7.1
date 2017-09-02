@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Increamenting Count Value </title> <!-- Title of the page-->
+</head>
+<body>
+	<script type="text/javascript"> // script for including javascript logic
+
+       var i = (function(n) // global variable i
+          {
+        return function()   // returning function 
+          {
+        n += 1;          // Incrementing count value startin from 1
+        return n;
+         }
+        }(0));      // -1 if you want the first increment to return 0
+
+        alert("Iteration = " + i());
+        alert("Iteration = " + i());
+        alert("Iteration = " + i());
+
+	</script>
+
+</body>
+</html>
